@@ -84,3 +84,7 @@ The content for all pages should be created by the developer to represent a fict
 - The project should be completed within **2 days** from the start date.
 - The final code should be uploaded to this repository on GitHub.
 - Include a `README.md` file with detailed documentation explaining the project structure and instructions on how to run it locally.
+
+## 📦 Libraries and Plugins
+
+For a detailed list of all libraries and plugins used in this project, please refer to the [LIBRARIES.md](./LIBRARIES.md) file.
