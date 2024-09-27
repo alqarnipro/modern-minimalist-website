@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Minimalist 3-Page Website
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project is focused on creating a responsive, 3-page website using Tailwind CSS, React, TypeScript, and Next.js. The pages will represent a fictional company and follow modern and minimalist design principles.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Pages
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Home Page**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   - A hero section with a prominent Call To Action (CTA) and client testimonials.
+   - A footer with social media links and basic company information.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **About Us Page**
 
-## Learn More
+   - Company history and mission statement.
+   - Team member profiles to showcase the people behind the company.
 
-To learn more about Next.js, take a look at the following resources:
+3. **Services Page**
+   - Detailed descriptions of services offered using organized cards or lists.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technical Requirements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Use **Tailwind CSS** for styling without adding custom classes.
+- Avoid using alignment properties like `left` and `right`; use `flex`, `grid`, `start`, `end`, and `gap` properties for layout and alignment.
+- Ensure the site is fully **responsive** on all devices (mobile, tablet, desktop).
+- Implement **Page Loading Indicators**, **Skeleton Loading** for data-heavy components, and **Loading Indicators** for all buttons/forms.
 
-## Deploy on Vercel
+## Performance and SEO Optimization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- The website must achieve a **100/100 score** in all categories of **Google PageSpeed Lighthouse**, including:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  - **Performance**
+  - **Accessibility**
+  - **Best Practices**
+  - **SEO**
+
+- Implement performance optimization techniques such as:
+  - Image compression
+  - Lazy loading for images and videos
+  - Caching and minification
+
+## Content
+
+The developer will create content for all pages, representing a fictional company. The content should be engaging, professional, and consistent across all pages.
+
+## Delivery and Timeline
+
+- The project should be completed within **2 days** from the start date.
+- The final code should be uploaded to this repository.
+- Include a `README.md` file with a detailed explanation of the project structure and instructions on how to run the project locally.
