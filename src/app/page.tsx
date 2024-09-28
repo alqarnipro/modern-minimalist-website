@@ -1,9 +1,14 @@
-import Image from "next/image";
+import React from "react";
+import MarketingSection from "./home/heroSection";
+import ProjectsSection from "./home/projectCard";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <main>
-      
- </main>
+    <div>
+      <MarketingSection />
+      <ProjectsSection />
+    </div>
   );
-}
+};
+
+export default Home;
