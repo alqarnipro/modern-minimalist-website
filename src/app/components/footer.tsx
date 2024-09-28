@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="bg-primary text-white py-16 px-8">
+    <footer className="bg-primary text-white py-16 px-8">
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-2">GET STARTED</h1>
         <h2 className="text-3xl mb-4">NOW</h2>
@@ -73,7 +73,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

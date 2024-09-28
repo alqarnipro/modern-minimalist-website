@@ -1,8 +1,10 @@
 import React from "react";
-import MarketingSection from "./home/heroSection";
-import ProjectsSection from "./home/projectCard";
-import WhoWeAreSection from "./home/WhoWeAreSection";
-import FAQ from "./home/FAQ";
+import dynamic from "next/dynamic";
+
+const MarketingSection = dynamic(() => import("./home/heroSection"));
+const ProjectsSection = dynamic(() => import("./home/projectCard"));
+const WhoWeAreSection = dynamic(() => import("./home/WhoWeAreSection"));
+const FAQ = dynamic(() => import("./home/FAQ"));
 
 const Home: React.FC = () => {
   return (

@@ -61,13 +61,14 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
       <div className="bg-primary  h-auto ">
-        <div className="w-2/3 relative bottom-20 ">
+        <div className="w-2/3 relative bottom-20 hidden md:block ">
           <Image
             src="/assets/Group 5.png"
             alt="hero seaction imge"
             className="mx-auto"
             width={800}
             height={800}
+            
           />
         </div>
         <div className="max-w-4xl mx-auto  px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
