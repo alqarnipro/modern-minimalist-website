@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Mainbtn from "./mainBtn";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -43,7 +44,9 @@ const Footer = () => {
               className="bg-primary border-none w-full p-2 text-white placeholder-gray-400 focus:outline-none"
               placeholder="Enter your email"
             />
-            <button className="ml-2 text-white">➔</button>
+            <button className="ml-2 text-white">
+              <Image src='/assets/Vector.png' alt="submit icon" width={30} height={30}/>
+            </button>
           </div>
         </div>
       </div>
