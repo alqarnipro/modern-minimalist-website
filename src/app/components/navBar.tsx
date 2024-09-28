@@ -1,10 +1,8 @@
-"use client"; 
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from 'next/image';
 const Navbar = () => {
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -12,13 +10,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white p-3 drop-shadow-md my-4 mx-6 rounded-full" >
+    <nav className="bg-white p-3 drop-shadow-md my-4 mx-6 rounded-full">
       <div className="container mx-auto flex justify-between items-center">
-       <div className="text-xl font-thin text-primary">
-      <Link href="/home" className="flex items-center">
-        Marketeer
-      </Link>
-    </div>      
+        <div className="text-xl font-thin text-primary">
+          <Link href="/home" className="flex items-center">
+            Marketeer
+          </Link>
+        </div>
         <div className="hidden md:flex space-x-6">
           <Link href="/home" className="text-gray-700 hover:text-secondary">
             Home
@@ -26,7 +24,7 @@ const Navbar = () => {
           <Link href="/services" className="text-gray-700 hover:text-secondary">
             Services
           </Link>
- 
+
           <Link href="/about" className="text-gray-700 hover:text-secondary">
             About
           </Link>
@@ -36,7 +34,7 @@ const Navbar = () => {
             href="/contact"
             className="bg-secondary px-4 py-2 rounded-full transition-colors text-black"
           >
-            Let's Talk
+            Let&apos;s Talk
           </Link>
         </div>
         <div className="md:hidden">
@@ -77,7 +75,7 @@ const Navbar = () => {
           >
             Services
           </Link>
-          
+
           <Link
             href="/about"
             className="block py-2 px-4 text-gray-700 hover:bg-gray-100"
@@ -85,7 +83,6 @@ const Navbar = () => {
           >
             About
           </Link>
-   
         </div>
       )}
     </nav>
