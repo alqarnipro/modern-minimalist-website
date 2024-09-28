@@ -12,8 +12,8 @@ const Footer = () => {
       </div>
 
       <p className="text-center mb-8">
-        If you would like to work with us or just want to get in touch, we&apos;d
-        love to hear from you!
+        If you would like to work with us or just want to get in touch,
+        we&apos;d love to hear from you!
       </p>
 
       <div className="flex justify-between items-center border-t border-gray-700 pt-8">
