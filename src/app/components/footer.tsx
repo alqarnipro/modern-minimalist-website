@@ -62,10 +62,10 @@ const Footer = () => {
           <Link href="/about" className="hover:text-white">
             About Us
           </Link>
-          <Link href="/about" className="hover:text-white">
+          <Link href="/about" className="hover:text-white  px-2">
             Privacy Policy
           </Link>
-          <Link href="/about" className="hover:text-white">
+          <Link href="/about" className="hover:text-white  px-2">
             Career
           </Link>
           <Link href="/about" className="hover:text-white">

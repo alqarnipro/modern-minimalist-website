@@ -51,6 +51,7 @@ const Navbar = () => {
             <button
               className="text-gray-700 focus:outline-none"
               onClick={toggleMenu}
+              aria-label="berger menu"
             >
               <svg
                 className="w-6 h-6"
