@@ -12,16 +12,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white py-3 drop-shadow-md my-4 mx-6 rounded-full" >
+    <nav className="bg-white p-3 drop-shadow-md my-4 mx-6 rounded-full" >
       <div className="container mx-auto flex justify-between items-center">
        <div className="text-xl font-thin text-primary">
       <Link href="/home" className="flex items-center">
-        <Image
-            src="/assets/1727485704687znlrq4uq-removebg-preview.png" 
-          alt="Logo"
-          width={50} 
-          height={50} 
-        />
         Marketeer
       </Link>
     </div>      
