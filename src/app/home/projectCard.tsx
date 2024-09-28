@@ -15,7 +15,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
-      <Image src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+      <Image
+        src={imageUrl}
+        alt={title}
+        className="w-full h-48 object-cover"
+        width={700}
+        height={700}
+      />
       <div className="p-4">
         <h3 className="text-lg font-semibold">{title}</h3>
         <p className="text-sm text-gray-500">{category}</p>
@@ -52,7 +58,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="flex">
+        <div className="flex justify-between">
           <div className="flex flex-col">
             <div className="flex align-middle justify-start">
               <p className="m-0 p-0">feature</p>
@@ -60,7 +66,9 @@ const ProjectsSection: React.FC = () => {
             </div>
             <h2 className="text-7xl mb-8 uppercase font-thin"> Projects</h2>
           </div>
-          <Mainbtn text="View More Projects" link="/"></Mainbtn>
+          <div className="">
+            <Mainbtn text="View More Projects" link="/"></Mainbtn>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">

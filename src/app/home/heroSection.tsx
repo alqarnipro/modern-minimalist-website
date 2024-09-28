@@ -43,6 +43,8 @@ const HeroSection: React.FC = () => {
               src="/assets/group-images.png.png"
               alt="Customer images"
               className="h-auto rounded-full shadow-lg"
+              width={80}
+              height={80}
             />
           </div>
           <div className="">
@@ -64,6 +66,8 @@ const HeroSection: React.FC = () => {
             src="/assets/Group 5.png"
             alt="hero seaction imge"
             className="mx-auto"
+            width={800}
+            height={800}
           />
         </div>
         <div className="max-w-4xl mx-auto  px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">

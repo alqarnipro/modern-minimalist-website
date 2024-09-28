@@ -20,6 +20,7 @@ const Navbar = () => {
                 src="/assets/1727485704687znlrq4uq-removebg-preview.png"
                 alt="logo"
                 width={40}
+                height={40}
                 className="me-2"
               />
               Marketeer
