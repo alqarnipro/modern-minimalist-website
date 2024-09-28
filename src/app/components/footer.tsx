@@ -59,13 +59,13 @@ const Footer = () => {
       <div className="flex justify-between items-center text-sm text-gray-400 border-t border-gray-700 mt-8 pt-8">
         <p>© 2024 - 2025 | All rights reserved by Marketeer</p>
         <div className="space-x-4">
-          <Link href="/about" className="hover:text-white">
+          <Link href="/about" className="hover:text-white px-3">
             About Us
           </Link>
-          <Link href="/about" className="hover:text-white  px-2">
+          <Link href="/about" className="hover:text-white  ">
             Privacy Policy
           </Link>
-          <Link href="/about" className="hover:text-white  px-2">
+          <Link href="/about" className="hover:text-white  px-3">
             Career
           </Link>
           <Link href="/about" className="hover:text-white">
