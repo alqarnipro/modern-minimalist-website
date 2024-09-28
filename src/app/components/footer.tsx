@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Mainbtn from "./mainBtn";
 
 const Footer = () => {
   return (
@@ -7,14 +8,12 @@ const Footer = () => {
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-2">GET STARTED</h1>
         <h2 className="text-3xl mb-4">NOW</h2>
-        <button className="bg-secondary text-black px-6 py-2 rounded-full">
-          Let &apos; s Contact
-        </button>
+        <Mainbtn text="Let's Contact" link="/"></Mainbtn>
       </div>
 
       <p className="text-center mb-8">
-        If you would like to work with us or just want to get in touch, we
-        &apos; d love to hear from you!
+        If you would like to work with us or just want to get in touch, we&apos;d
+        love to hear from you!
       </p>
 
       <div className="flex justify-between items-center border-t border-gray-700 pt-8">

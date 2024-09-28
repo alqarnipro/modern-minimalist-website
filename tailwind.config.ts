@@ -13,6 +13,8 @@ const config: Config = {
         foreground: "var(--foreground)",
         primary: "#192928",
         secondary: "#D2FD89",
+        gridiantOne: " #e8e2d9",
+        gridiantTow: " #b0d7a3",
       },
     },
   },
