@@ -45,7 +45,12 @@ const Footer = () => {
               placeholder="Enter your email"
             />
             <button className="ml-2 text-white">
-              <Image src='/assets/Vector.png' alt="submit icon" width={30} height={30}/>
+              <Image
+                src="/assets/Vector.png"
+                alt="submit icon"
+                width={30}
+                height={30}
+              />
             </button>
           </div>
         </div>
