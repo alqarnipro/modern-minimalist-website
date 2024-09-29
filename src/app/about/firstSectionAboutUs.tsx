@@ -49,7 +49,7 @@ const FirstAboutUs: React.FC = () => {
             </div>
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/assets/box-c.png"
+                src="/assets/box-A-1024x857.png"
                 alt="Team Member Image"
                 className="w-full h-full object-cover"
                 width={1024}
