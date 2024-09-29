@@ -22,12 +22,14 @@ const WhoWeAreSection: React.FC = () => {
 
       <div className="">
         <Image
-          src="/assets/Container (2).png"
-          className="col-span-1 row-span-2 object-cover h-full"
+          src="/assets/Container(2).png"
           alt="Left Image"
           width={1200}
           height={700}
+          sizes="(max-width: 1200px) 100vw, 1200px"
+          quality={75}
         />
+
       </div>
       <p className="text-secondary mt-8 lg:mt-16 w-1/3 ms-auto">
         With an emphasis on innovation, we stay ahead of the curve, embracing
