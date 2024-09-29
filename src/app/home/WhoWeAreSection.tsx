@@ -29,7 +29,6 @@ const WhoWeAreSection: React.FC = () => {
           sizes="(max-width: 1200px) 100vw, 1200px"
           quality={75}
         />
-
       </div>
       <p className="text-secondary mt-8 lg:mt-16 w-1/3 ms-auto">
         With an emphasis on innovation, we stay ahead of the curve, embracing
