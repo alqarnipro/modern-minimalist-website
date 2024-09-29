@@ -1,6 +1,7 @@
 import React from "react";
 import Mainbtn from "../components/mainBtn";
 import Image from "next/image";
+import SectionTitle from "../components/sectionTitle";
 
 interface ProjectCardProps {
   title: string;
@@ -60,10 +61,7 @@ const ProjectsSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="flex flex-col mb-4 md:mb-0">
-            <div className="flex align-middle justify-start">
-              <p className="m-0 p-0">feature</p>
-              <div className="left-0 bottom-1 w-1/4 h-0.5 bg-gray-700 mt-3 ms-2"></div>
-            </div>
+            <SectionTitle text="feature" underlineWidth="1/3" />
             <h2 className="text-7xl mb-8 uppercase font-thin">Projects</h2>
           </div>
           <div className="mb-2">
