@@ -50,6 +50,7 @@ const TestimonialSection: React.FC = () => {
       <div className="container mx-auto flex items-center justify-center">
         <button
           onClick={handlePrev}
+          aria-label="previsbtn"
           className="text-gray-500 hover:text-black p-2 h-12 flex items-center"
         >
           <FaChevronLeft size={24} />
@@ -73,6 +74,7 @@ const TestimonialSection: React.FC = () => {
         </div>
         <button
           onClick={handleNext}
+          aria-label="Next btn"
           className="text-gray-500 hover:text-black p-2 h-12 flex items-center"
         >
           <FaChevronRight size={24} />

@@ -49,7 +49,7 @@ const pricingOptions: PricingOption[] = [
 const PricingCard: React.FC<PricingOption> = ({ title, price, features }) => (
   <div className="border rounded-lg p-6 ">
     <h3 className="text-xl font-semibold">{title}</h3>
-    <p className="text-4xl mt-4 text-gray-400">{price}</p>
+    <p className="text-4xl mt-4 text-gray-700">{price}</p>
     <ul className="mt-6 space-y-2">
       {features.map((feature, index) => (
         <li key={index}>{feature}</li>

@@ -29,8 +29,8 @@ Events and Venues: Organizations hosting events or managing venues that cater to
 
 const FAQ = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center">
-      <div className="flex flex-col md:flex-row justify-between align-middle mx-auto p-4 w-full">
+    <section className="min-h-screen bg-gray-100 flex items-center ">
+      <div className="flex flex-col md:flex-row justify-between align-middle mx-auto p-4 w-full container">
         <h1 className="mb-4 md:mb-0">
           <span className="uppercase font-bold text-8xl">faq </span>
           <Mainbtn text="Explore More" link="/" />
@@ -38,7 +38,7 @@ const FAQ = () => {
         </h1>
         <Accordion items={faqItems} />
       </div>
-    </div>
+    </section>
   );
 };
 
