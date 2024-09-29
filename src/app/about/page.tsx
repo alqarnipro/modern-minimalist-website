@@ -1,16 +1,18 @@
 import React from "react";
-import FirstAboutUs from "./firstSectionAboutUs";
-import WhoWeAreSection from "./whoWeAre";
-import TestimonialSection from "./testmonialSection";
-import PricingCards from "../components/PricingCard";
+import dynamic from "next/dynamic";
 
-export default function page() {
+const FirstAboutUs = dynamic(() => import("./firstSectionAboutUs"));
+const WhoWeAreSection = dynamic(() => import("./whoWeAre"));
+const TestimonialSection = dynamic(() => import("./testmonialSection"));
+const PricingCards = dynamic(() => import("../components/PricingCard"));
+
+export default function Page() {
   return (
     <>
-      <FirstAboutUs></FirstAboutUs>
-      <WhoWeAreSection></WhoWeAreSection>
+      <FirstAboutUs />
+      <WhoWeAreSection />
       <TestimonialSection />
-      <PricingCards></PricingCards>
+      <PricingCards />
     </>
   );
 }

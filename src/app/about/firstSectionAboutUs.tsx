@@ -23,12 +23,12 @@ const FirstAboutUs: React.FC = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="rounded-lg overflow-hidden">
+          <div className="rounded-lg overflow-hidden ">
             <Image
               loading="eager"
               src="/assets/box-A-1024x857.png"
               alt="Office Image"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover "
               width={1200}
               height={1000}
             />
