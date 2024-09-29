@@ -5,7 +5,7 @@ import Mainbtn from "../components/mainBtn";
 const AgencyBanner: React.FC = () => {
   return (
     <section className="flex flex-col lg:flex-row items-center bg-gray-100 h-screen my-14">
-      <div className="w-full lg:w-1/2 h-full">
+      <div className="w-full lg:w-1/2 h-full hidden lg:block">
         <Image
           src="/assets/Women Collaborating at Work 1.png"
           alt="Team working"
@@ -16,16 +16,16 @@ const AgencyBanner: React.FC = () => {
       </div>
 
       <div
-        className="bg-primary text-white lg:w-1/2 h-full flex items-center justify-start"
+        className="bg-primary text-white lg:w-1/2 h-full flex items-center justify-start md:w-full"
         style={{
           backgroundImage: 'url("/assets/Background.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="p-8">
+        <div className="p-8 ">
           <h2 className="text-12 lg:text-4xl font-bold mb-4 uppercase">
-            We’re SIMPLE{" "}
+            We’re SIMPLE
             <span className="font-thin">
               BUT <br /> PRO-LEVEL AGENCY
             </span>

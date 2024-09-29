@@ -11,8 +11,8 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="relative">
-      <nav className=" p-3 drop-shadow-md rounded-lg absolute top-5 left-5 right-5 bg-white ">
+    <div className="relative ">
+      <nav className=" p-3 drop-shadow-md rounded-lg  right-5 bg-white sticky w-full z-10">
         <div className="container mx-auto flex justify-between items-center ">
           <div className="text-xl font-thin text-primary">
             <Link href="/" className="flex items-center">
@@ -30,7 +30,6 @@ const Navbar = () => {
             <Link href="/" className="text-gray-700 hover:text-secondary">
               Home
             </Link>
-
             <Link href="/about" className="text-gray-700 hover:text-secondary">
               About
             </Link>

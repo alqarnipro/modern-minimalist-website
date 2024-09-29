@@ -22,7 +22,7 @@ const WhoWeAreSection: React.FC = () => {
 
       <div className="">
         <Image
-          src="/assets/Container(2).png"
+          src="/assets/Container (2).png"
           alt="Left Image"
           width={1200}
           height={700}

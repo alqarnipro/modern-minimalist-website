@@ -7,7 +7,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 const FirstAboutUs: React.FC = () => {
   return (
     <section className="px-4 py-12 lg:px-20 bg-white mx-auto">
-      <div className="container mt-16">
+      <div className="container mt-16 mx-auto">
         <div className="mb-12">
           <SectionTitle text="01. About Us" underlineWidth="1/3" />
           <h1 className="text-3xl md:text-5xl font-bold uppercase leading-snug">

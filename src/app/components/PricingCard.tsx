@@ -63,7 +63,7 @@ const PricingCard: React.FC<PricingOption> = ({ title, price, features }) => (
 
 const PricingCards: React.FC = () => {
   return (
-    <section className=" mx-auto py-10 px-4 container">
+    <section className=" mx-auto py-10 px-4 container" >
       <h2 className="text-5xl  mb-8">
         <span className="font-bold">SPECIAL OFFER!</span>
         <span className="font-thin ">

@@ -1,16 +1,20 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import Loader from "./loader";
 
 interface ButtonProps {
   text: string;
   link?: string;
   onClick?: () => void;
+  isLoading?: boolean;
 }
 
-const Mainbtn: React.FC<ButtonProps> = ({ text, link, onClick }) => {
+const Mainbtn: React.FC<ButtonProps> = ({isLoading, text, link, onClick }) => {
   const handleClick = () => {
-    if (onClick) onClick();
+    if (onClick) {
+      onClick();
+    }
   };
 
   return link ? (
@@ -19,7 +23,10 @@ const Mainbtn: React.FC<ButtonProps> = ({ text, link, onClick }) => {
       className="inline-flex items-center bg-secondary text-black px-4 py-2 rounded-full transition-all duration-300 hover:bg-lime-400 hover:scale-105"
       onClick={handleClick}
     >
-      {text}
+      {isLoading ? (<Loader />) : (
+        text 
+      )}
+     
       <span className="ml-2">↗</span>
     </Link>
   ) : (

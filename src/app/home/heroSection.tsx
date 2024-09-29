@@ -1,29 +1,25 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 import Mainbtn from "../components/mainBtn";
 import MinCardHeroSection from "./minCardHero";
 import Image from "next/image";
+import { Feature, getFeatures } from "../serviceLogic.tsx/heroSectionService";
+import Loader from "../components/loader";
+
 
 const HeroSection: React.FC = () => {
-  const features = [
-    {
-      title: "Scale your business team quickly",
-      description:
-        "We provide the perfect solutions for quickly hiring specialized teams, allowing your company to expand rapidly and meet market demands",
-      icon: "/assets/Container-1.png",
-    },
-    {
-      title: "Improve yearly product sale ratio",
-      description:
-        "With our optimized marketing strategies, you can significantly boost sales rates and increase profits throughout the year",
-      icon: "/assets/Container-2.png",
-    },
-    {
-      title: "Grow-up your real traffic",
-      description:
-        "We help you attract more visitors who are genuinely interested in your services, increasing the chances of converting them into loyal customer",
-      icon: "/assets/Container.png",
-    },
-  ];
+  const [features, setFeatures] = useState<Feature[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const fetchFeatures = async () => {
+      const data = await getFeatures();
+      setFeatures(data);
+      setLoading(false);
+    };
+
+    fetchFeatures();
+  }, []);
 
   return (
     <section>
@@ -56,7 +52,7 @@ const HeroSection: React.FC = () => {
               partners with us; more than half our clients stay with us for
               longer than a single project.
             </p>
-            <Mainbtn text="Get Started" link="/" />
+            <Mainbtn text="Get Started" link="/" isLoading={ loading} />
           </div>
         </div>
       </div>
@@ -70,16 +66,20 @@ const HeroSection: React.FC = () => {
             height={800}
           />
         </div>
-        <div className="max-w-4xl mx-auto  px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
-          {features.map((feature, index) => (
-            <MinCardHeroSection
-              key={index}
-              title={feature.title}
-              description={feature.description}
-              icon={feature.icon}
-            />
-          ))}
-        </div>
+        {loading ? (<Loader />) : (
+
+          <div className="max-w-4xl mx-auto  px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
+            {features.map((feature, index) => (
+              <MinCardHeroSection
+                key={index}
+                title={feature.title}
+                description={feature.description}
+                icon={feature.icon}
+              />
+            ))}
+          </div>
+        )}
+
       </div>
     </section>
   );
