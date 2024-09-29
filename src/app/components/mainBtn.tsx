@@ -10,7 +10,7 @@ interface ButtonProps {
   isLoading?: boolean;
 }
 
-const Mainbtn: React.FC<ButtonProps> = ({isLoading, text, link, onClick }) => {
+const Mainbtn: React.FC<ButtonProps> = ({ isLoading, text, link, onClick }) => {
   const handleClick = () => {
     if (onClick) {
       onClick();
@@ -23,10 +23,8 @@ const Mainbtn: React.FC<ButtonProps> = ({isLoading, text, link, onClick }) => {
       className="inline-flex items-center bg-secondary text-black px-4 py-2 rounded-full transition-all duration-300 hover:bg-lime-400 hover:scale-105"
       onClick={handleClick}
     >
-      {isLoading ? (<Loader />) : (
-        text 
-      )}
-     
+      {isLoading ? <Loader /> : text}
+
       <span className="ml-2">↗</span>
     </Link>
   ) : (

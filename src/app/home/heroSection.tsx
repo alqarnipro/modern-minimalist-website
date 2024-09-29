@@ -1,11 +1,10 @@
-'use client'
+"use client";
 import React, { useEffect, useState } from "react";
 import Mainbtn from "../components/mainBtn";
 import MinCardHeroSection from "./minCardHero";
 import Image from "next/image";
 import { Feature, getFeatures } from "../serviceLogic.tsx/heroSectionService";
 import Loader from "../components/loader";
-
 
 const HeroSection: React.FC = () => {
   const [features, setFeatures] = useState<Feature[]>([]);
@@ -52,7 +51,7 @@ const HeroSection: React.FC = () => {
               partners with us; more than half our clients stay with us for
               longer than a single project.
             </p>
-            <Mainbtn text="Get Started" link="/" isLoading={ loading} />
+            <Mainbtn text="Get Started" link="/" isLoading={loading} />
           </div>
         </div>
       </div>
@@ -66,8 +65,9 @@ const HeroSection: React.FC = () => {
             height={800}
           />
         </div>
-        {loading ? (<Loader />) : (
-
+        {loading ? (
+          <Loader />
+        ) : (
           <div className="max-w-4xl mx-auto  px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
             {features.map((feature, index) => (
               <MinCardHeroSection
@@ -79,7 +79,6 @@ const HeroSection: React.FC = () => {
             ))}
           </div>
         )}
-
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -34,7 +34,6 @@ export default function RootLayout({
         <div data-aos="fade-right">
           <Footer />
         </div>
-        
       </body>
     </html>
   );
