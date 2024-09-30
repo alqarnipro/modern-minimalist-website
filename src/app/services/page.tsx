@@ -5,14 +5,20 @@ import PricingCards from "../components/PricingCard";
 import StartJourny from "./startJourny";
 import ServiceCards from "./servicesCards";
 
-export default function page() {
+export const metadata = {
+  title: "Our Services - Comprehensive Digital Solutions",
+  description:
+    "Explore our full range of services, from web development to digital marketing, designed to elevate your business in the digital landscape.",
+};
+
+export default function Page() {
   return (
     <>
-      <FirstSectionServices></FirstSectionServices>
-      <ServiceCards></ServiceCards>
-      <AgencyBanner></AgencyBanner>
-      <PricingCards></PricingCards>
-      <StartJourny></StartJourny>
+      <FirstSectionServices />
+      <ServiceCards />
+      <AgencyBanner />
+      <PricingCards />
+      <StartJourny />
     </>
   );
 }

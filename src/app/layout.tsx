@@ -5,7 +5,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/navBar";
 import Footer from "./components/footer";
-import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,13 +24,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <title>Digital Marketing Agency - Welcome to MARKETEER</title>
         <meta
           name="description"
           content="Mary's simple recipe for maple bacon donuts makes a sticky, sweet treat with just a hint of salt that you'll keep coming back for."
         />
-      </Head>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
