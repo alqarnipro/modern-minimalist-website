@@ -35,7 +35,7 @@ const AgencyBanner: React.FC = () => {
             your website.
           </p>
           <div className="mx-auto">
-            <Mainbtn text="About us" link="/About" />
+            <Mainbtn text="About us" link="/about" />
           </div>
         </div>
       </div>
