@@ -28,8 +28,9 @@ export default function RootLayout({
         <title>Digital Marketing Agency - Welcome to MARKETEER</title>
         <meta
           name="description"
-          content="This is a detailed description of the home page content."
-        />
+          content="Mary's simple recipe for maple bacon donuts
+           makes a sticky, sweet treat with just a hint
+           of salt that you'll keep coming back for."/>
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
