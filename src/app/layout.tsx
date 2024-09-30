@@ -30,7 +30,8 @@ export default function RootLayout({
           name="description"
           content="Mary's simple recipe for maple bacon donuts
            makes a sticky, sweet treat with just a hint
-           of salt that you'll keep coming back for."/>
+           of salt that you'll keep coming back for."
+        />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
