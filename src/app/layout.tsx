@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -19,30 +20,24 @@ const geistMono = localFont({
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <Head>
         <title>Digital Marketing Agency - Welcome to MARKETEER</title>
         <meta
           name="description"
-          content="Mary's simple recipe for maple bacon donuts
-           makes a sticky, sweet treat with just a hint
-           of salt that you'll keep coming back for."
+          content="Mary's simple recipe for maple bacon donuts makes a sticky, sweet treat with just a hint of salt that you'll keep coming back for."
         />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div data-aos="fade-up">
-          <Navbar />
-        </div>
+        <Navbar />
         {children}
-        <div data-aos="fade-right">
-          <Footer />
-        </div>
+        <Footer />
       </body>
     </html>
   );

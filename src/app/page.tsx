@@ -1,21 +1,20 @@
 "use client";
+
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
 import AOS from "aos";
-import "aos/dist/aos.css"; // استيراد ملف CSS الخاص بالأنيميشن
+import "aos/dist/aos.css";
 
-// تحميل الأقسام بشكل ديناميكي
 const MarketingSection = dynamic(() => import("./home/heroSection"));
 const ProjectsSection = dynamic(() => import("./home/projectCard"));
 const WhoWeAreSection = dynamic(() => import("./home/WhoWeAreSection"));
 const FAQ = dynamic(() => import("./home/FAQ"));
 
 const Home: React.FC = () => {
-  // تهيئة AOS
   useEffect(() => {
     AOS.init({
-      duration: 1000, // تحديد مدة الأنيميشن
-      once: true, // الأنيميشن يحدث مرة واحدة فقط
+      duration: 1000,
+      once: true,
     });
   }, []);
 
