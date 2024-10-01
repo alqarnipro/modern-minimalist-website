@@ -38,7 +38,6 @@ const Navbar = () => {
   }, []);
 
   return (
-    
     <header
       className={`p-3 drop-shadow-md rounded-lg bg-white w-full fixed z-50 transition-all duration-300 ${isScrolled ? "py-2 shadow-lg" : "py-4"}`}
     >
@@ -65,12 +64,18 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/about" className="text-gray-700 hover:text-secondary">
+              <Link
+                href="/about"
+                className="text-gray-700 hover:text-secondary"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link href="/services" className="text-gray-700 hover:text-secondary">
+              <Link
+                href="/services"
+                className="text-gray-700 hover:text-secondary"
+              >
                 Services
               </Link>
             </li>
@@ -149,8 +154,6 @@ const Navbar = () => {
         </nav>
       )}
     </header>
-
-
   );
 };
 
