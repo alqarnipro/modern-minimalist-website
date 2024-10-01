@@ -15,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <article className="bg-white rounded-lg shadow-md overflow-hidden">
       <Image
         src={imageUrl}
         alt={title}
@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <h3 className="text-lg font-semibold">{title}</h3>
         <p className="text-sm text-gray-500">{category}</p>
       </div>
-    </div>
+    </article>
   );
 };
 
@@ -59,15 +59,15 @@ const ProjectsSection: React.FC = () => {
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between">
-          <div className="flex flex-col mb-4 md:mb-0">
+        <header className="flex flex-col md:flex-row justify-between mb-8">
+          <div className="flex flex-col">
             <SectionTitle text="feature" underlineWidth="1/3" />
-            <h2 className="text-7xl mb-8 uppercase font-thin">Projects</h2>
+            <h2 className="text-7xl uppercase font-thin">Projects</h2>
           </div>
-          <div className="mb-2">
+          <div>
             <Mainbtn text="View More Projects" link="/" />
           </div>
-        </div>
+        </header>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <ProjectCard

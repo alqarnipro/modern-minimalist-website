@@ -52,16 +52,16 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   description,
 }) => {
   return (
-    <div className="flex flex-col items-start p-4 rounded-lg ">
-      <div className="hover:bg-secondary p-2 rounded-md transition-all duration-300 ease-in-out">
+    <article className="flex flex-col items-start p-4 rounded-lg">
+      <header className="hover:bg-secondary p-2 rounded-md transition-all duration-300 ease-in-out">
         <Image src={icon} alt={title} width={50} height={50} />
-      </div>
+      </header>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
-      <Link href="/" className="underline">
+      <Link href="/" className="underline" rel="noopener noreferrer">
         Read More
       </Link>
-    </div>
+    </article>
   );
 };
 
@@ -69,27 +69,26 @@ const ServiceCards: React.FC = () => {
   return (
     <section className="p-6 lg:p-12">
       <div className="container mx-auto">
-        <div className="flex justify-between">
-          <h2 className="text-5xl lg:text-4xl font-bold mb-8">
+        <header className="flex justify-between mb-8">
+          <h2 className="text-5xl lg:text-4xl font-bold">
             OUR EXCLUSIVE <br /> SERVICES
           </h2>
           <p className="w-1/3 text-gray-500">
             We bet on brands that shift categories and add value to people is
-            lives; and on founders who are motivated to shape 
+            lives; and on founders who are motivated to shape
           </p>
-        </div>
+        </header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {cardsinfo.map((card, i) => {
-            return (
+          {cardsinfo.map((card, i) => (
+            <article key={i} className="flex flex-col">
               <ServiceCard
-                key={i}
                 icon={card.icon}
                 title={card.title}
                 description={card.description}
               />
-            );
-          })}
+            </article>
+          ))}
         </div>
       </div>
     </section>

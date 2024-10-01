@@ -23,7 +23,7 @@ const AgencyBanner: React.FC = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="p-8 ">
+        <div className="p-8">
           <h2 className="text-12 lg:text-4xl font-bold mb-4 uppercase">
             We’re SIMPLE
             <span className="font-thin">

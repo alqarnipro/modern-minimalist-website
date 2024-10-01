@@ -23,16 +23,16 @@ const HeroSection: React.FC = () => {
   return (
     <section>
       <div className="flex items-center justify-between p-8 bg-gradient-to-r from-gridiantOne to-gridiantTow h-screen">
-        <div className="px-2  ">
-          <span className="uppercase font-thin text-2xl">
-            digital marketing agency
-          </span>
+        <div className="px-2">
+          <h2 className="uppercase font-thin text-2xl">
+            Digital Marketing Agency
+          </h2>
           <h1 className="lg:text-8xl uppercase text-6xl">
-            <span className="font-bold"> We help to</span>
+            <span className="font-bold">We help to</span>
             <span className="font-thin"> grow your startup</span>
           </h1>
         </div>
-        <div className="hidden lg:flex w-2/3 align-middle flex-col p-2 ">
+        <aside className="hidden lg:flex w-2/3 align-middle flex-col p-2">
           <div className="w-1/3">
             <Image
               src="/assets/group-images.png.png"
@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
               height={80}
             />
           </div>
-          <div className="">
+          <div>
             <p className="mt-4 text-lg text-gray-700">
               We have 18k+ customers world-wide
             </p>
@@ -53,13 +53,13 @@ const HeroSection: React.FC = () => {
             </p>
             <Mainbtn text="Get Started" link="/" isLoading={loading} />
           </div>
-        </div>
+        </aside>
       </div>
-      <div className="bg-primary  h-auto ">
-        <div className="w-2/3 relative bottom-20 hidden md:block ">
+      <div className="bg-primary h-auto">
+        <div className="w-2/3 relative bottom-20 hidden md:block">
           <Image
             src="/assets/Group 5.png"
-            alt="hero seaction imge"
+            alt="Hero section image"
             className="mx-auto"
             width={800}
             height={800}
@@ -68,7 +68,7 @@ const HeroSection: React.FC = () => {
         {loading ? (
           <Loader />
         ) : (
-          <div className="max-w-4xl mx-auto  px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
+          <div className="max-w-4xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
             {features.map((feature, index) => (
               <MinCardHeroSection
                 key={index}

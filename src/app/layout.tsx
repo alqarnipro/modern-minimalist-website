@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/navBar";
@@ -17,6 +14,12 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+export const metadata = {
+  title: "Digital Marketing Agency - Welcome to MARKETEER",
+  description:
+    "Mary's simple recipe for maple bacon donuts makes a sticky, sweet treat with just a hint of salt that you'll keep coming back for.",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -25,11 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Digital Marketing Agency - Welcome to MARKETEER</title>
-        <meta
-          name="description"
-          content="Mary's simple recipe for maple bacon donuts makes a sticky, sweet treat with just a hint of salt that you'll keep coming back for."
-        />
+        <title>{metadata.title}</title>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="description" content={metadata.description} />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

@@ -22,18 +22,24 @@ const Mainbtn: React.FC<ButtonProps> = ({ isLoading, text, link, onClick }) => {
       href={link}
       className="inline-flex items-center bg-secondary text-black px-4 py-2 rounded-full transition-all duration-300 hover:bg-lime-400 hover:scale-105"
       onClick={handleClick}
+      role="link"
+      aria-label={text}
     >
       {isLoading ? <Loader /> : text}
-
-      <span className="ml-2">↗</span>
+      <span className="ml-2" aria-hidden="true">
+        ↗
+      </span>
     </Link>
   ) : (
     <button
       onClick={handleClick}
       className="inline-flex items-center bg-secondary text-black px-4 py-2 rounded-full transition-all duration-300 hover:bg-lime-400 hover:scale-105"
+      aria-label={text}
     >
       {text}
-      <span className="ml-2">↗</span>
+      <span className="ml-2" aria-hidden="true">
+        ↗
+      </span>
     </button>
   );
 };

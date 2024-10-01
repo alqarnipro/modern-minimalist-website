@@ -29,15 +29,15 @@ Events and Venues: Organizations hosting events or managing venues that cater to
 
 const FAQ = () => {
   return (
-    <section className="min-h-screen bg-gray-100 flex items-center ">
-      <div className="flex flex-col md:flex-row justify-between align-middle mx-auto p-4 w-full container">
-        <h1 className="mb-4 md:mb-0">
-          <span className="uppercase font-bold text-8xl">faq </span>
+    <section className="min-h-screen bg-gray-100 flex items-center">
+      <article className="flex flex-col md:flex-row justify-between align-middle mx-auto p-4 w-full container">
+        <header className="mb-4 md:mb-0">
+          <h1 className="uppercase font-bold text-8xl">FAQ</h1>
+          <p className="uppercase text-8xl">Section</p>
           <Mainbtn text="Explore More" link="/" />
-          <p className="uppercase text-8xl">section</p>
-        </h1>
+        </header>
         <Accordion items={faqItems} />
-      </div>
+      </article>
     </section>
   );
 };

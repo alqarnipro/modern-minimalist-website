@@ -12,12 +12,14 @@ const Analistec: React.FC<AnalistecProps> = ({
   background = "bg-gray-100",
 }) => {
   return (
-    <div className={`${background} p-6 rounded-lg`}>
+    <section className={`${background} p-6 rounded-lg`}>
+      <header>
+        <h2 className="text-gray-600 text-sm m-0 w-3/4">{title}</h2>
+      </header>
       <div>
-        <p className="text-gray-600 text-sm m-0 w-3/4 ">{title}</p>
-        <p className="text-5xl mt-10  text-center ">{numberAnalises}</p>
+        <p className="text-5xl mt-10 text-center">{numberAnalises}</p>
       </div>
-    </div>
+    </section>
   );
 };
 

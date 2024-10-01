@@ -40,7 +40,7 @@ const WhoWeAreSection: React.FC = () => {
     <section className="px-4 py-12 lg:px-20 bg-white">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="flex flex-col justify-center">
+          <article className="flex flex-col justify-center">
             <SectionTitle text="02. Who we are" underlineWidth="1/4" />
             <h1 className="text-4xl font-bold mb-4">
               WE MAKE STORABLE STRATEGY <br />
@@ -66,10 +66,10 @@ const WhoWeAreSection: React.FC = () => {
                 number="50k+"
                 Rate="Rate 50+"
                 image="/assets/success 1.png"
-                alt="success image"
+                alt="Success image"
               />
             </div>
-          </div>
+          </article>
 
           <div className="relative hidden lg:block">
             <Image
@@ -79,10 +79,10 @@ const WhoWeAreSection: React.FC = () => {
               width={1200}
               height={1000}
             />
-            <div className="absolute top-3/4 left-3/4">
+            <div className="absolute translate-x-80 -translate-y-40">
               <Analistec
                 title="Projects Success Rate"
-                background="bg-gradient-to-r from-gridiantOne to-gridiantTow "
+                background="bg-gradient-to-r from-gridiantOne to-gridiantTow"
                 numberAnalises="10M+"
               />
             </div>

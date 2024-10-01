@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-2">GET STARTED</h1>
         <h2 className="text-3xl mb-4">NOW</h2>
-        <Mainbtn text="Let's Contact" link="/"></Mainbtn>
+        <Mainbtn text="Let's Contact" link="/" />
       </div>
 
       <p className="text-center mb-8">
@@ -17,23 +17,23 @@ const Footer = () => {
         we&apos;d love to hear from you!
       </p>
 
-      <div className="flex justify-between items-center border-t border-gray-700 pt-8">
+      <div className="flex justify-between items-start border-t border-gray-700 pt-8">
         <div className="space-y-4">
           <h3 className="text-lg font-bold">London</h3>
-          <p>
+          <address>
             Baltia Square, Mark Street,
             <br />
             London
-          </p>
+          </address>
         </div>
 
         <div className="space-y-4">
           <h3 className="text-lg font-bold">New York</h3>
-          <p>
+          <address>
             Neruysa Centre, Ella Street,
             <br />
             New York, USA
-          </p>
+          </address>
         </div>
 
         <div className="space-y-4">
@@ -43,11 +43,12 @@ const Footer = () => {
               type="email"
               className="bg-primary border-none w-full p-2 text-white placeholder-gray-400 focus:outline-none"
               placeholder="Enter your email"
+              aria-label="Email input"
             />
-            <button className="ml-2 text-white">
+            <button className="ml-2 text-white" aria-label="Submit email">
               <Image
                 src="/assets/Vector.png"
-                alt="submit icon"
+                alt="Submit icon"
                 width={30}
                 height={30}
               />

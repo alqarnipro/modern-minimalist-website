@@ -4,13 +4,13 @@ import SectionTitle from "../components/sectionTitle";
 
 const FirstSectionServices = () => {
   return (
-    <section className="">
+    <section>
       <div className="container flex flex-col lg:flex-row items-start gap-8 p-6 lg:p-12 mx-auto">
-        <div className="lg:w-1/2 mt-32">
+        <header className="lg:w-1/2 mt-32">
           <SectionTitle text="Services" underlineWidth="1/3" />
           <h2 className="text-gray-800 text-3xl lg:text-4xl font-bold mb-4">
             WE MAKE <span className="text-black">DESIGN</span>
-            <span className="font-thin">THAT LEAD AND INSPIRE.</span>
+            <span className="font-thin"> THAT LEAD AND INSPIRE.</span>
           </h2>
           <p className="text-gray-600 my-6">
             We take a similar approach to design commercial to impactfully
@@ -22,7 +22,7 @@ const FirstSectionServices = () => {
             width={80}
             height={80}
           />
-        </div>
+        </header>
 
         <div className="lg:w-1/2 mt-32">
           <Image

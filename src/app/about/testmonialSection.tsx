@@ -50,31 +50,33 @@ const TestimonialSection: React.FC = () => {
       <div className="container mx-auto flex items-center justify-center">
         <button
           onClick={handlePrev}
-          aria-label="previsbtn"
+          aria-label="Previous testimonial"
           className="text-gray-500 hover:text-black p-2 h-12 flex items-center"
         >
           <FaChevronLeft size={24} />
         </button>
         <div className="text-center max-w-5xl mx-6 flex-grow min-h-52">
           <div className="text-6xl text-black mb-4 text-center font-bold">
-            <FaQuoteLeft className="bg-secondary p-3 rounded-full mx-auto " />
+            <FaQuoteLeft className="bg-secondary p-3 rounded-full mx-auto" />
           </div>
-          <p
+          <blockquote
             className={`text-lg text-gray-700 italic mb-4 transition-opacity duration-300 ${
               isTransitioning ? "opacity-0" : "opacity-90"
             }`}
           >
             {testimonials[currentTestimonial].quote}
-          </p>
-          <p
-            className={`font-semibold text-gray-900 transition-opacity duration-300 ${isTransitioning ? "opacity-0" : "opacity-90"}`}
+          </blockquote>
+          <cite
+            className={`font-semibold text-gray-900 transition-opacity duration-300 ${
+              isTransitioning ? "opacity-0" : "opacity-90"
+            }`}
           >
             {testimonials[currentTestimonial].author}
-          </p>
+          </cite>
         </div>
         <button
           onClick={handleNext}
-          aria-label="Next btn"
+          aria-label="Next testimonial"
           className="text-gray-500 hover:text-black p-2 h-12 flex items-center"
         >
           <FaChevronRight size={24} />

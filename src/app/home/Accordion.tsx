@@ -25,6 +25,9 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
           <button
             className="w-full text-left py-4 px-4 font-medium text-lg bg-gray-100 hover:bg-gray-200 focus:outline-none flex justify-between items-center"
             onClick={() => toggleAccordion(index)}
+            aria-expanded={activeIndex === index}
+            aria-controls={`accordion-content-${index}`}
+            id={`accordion-button-${index}`}
           >
             <span>{item.question}</span>
             <span className="text-xl flex items-center justify-center bg-secondary p-2 rounded-full font-thin">
@@ -38,6 +41,9 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
 
           <div
             className={`overflow-hidden transition-all duration-700 ease-in-out ${activeIndex === index ? "max-h-96" : "max-h-0"}`}
+            role="region"
+            aria-labelledby={`accordion-button-${index}`}
+            id={`accordion-content-${index}`}
           >
             <div className="p-4 text-gray-700 bg-gray-50">{item.answer}</div>
           </div>
