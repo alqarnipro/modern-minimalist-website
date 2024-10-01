@@ -38,6 +38,7 @@ const Navbar = () => {
   }, []);
 
   return (
+    
     <header
       className={`p-3 drop-shadow-md rounded-lg bg-white w-full fixed z-50 transition-all duration-300 ${isScrolled ? "py-2 shadow-lg" : "py-4"}`}
     >
@@ -56,11 +57,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <nav
-          className="hidden md:flex space-x-6"
-          aria-label="Main Navigation"
-          role="navigation"
-        >
+        <nav className="hidden md:flex space-x-6" aria-label="Main Navigation">
           <ul className="flex space-x-6">
             <li>
               <Link href="/" className="text-gray-700 hover:text-secondary">
@@ -68,18 +65,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link
-                href="/about"
-                className="text-gray-700 hover:text-secondary"
-              >
+              <Link href="/about" className="text-gray-700 hover:text-secondary">
                 About
               </Link>
             </li>
             <li>
-              <Link
-                href="/services"
-                className="text-gray-700 hover:text-secondary"
-              >
+              <Link href="/services" className="text-gray-700 hover:text-secondary">
                 Services
               </Link>
             </li>
@@ -125,7 +116,6 @@ const Navbar = () => {
           {...swipeHandlers}
           className="md:hidden bg-white text-center transition-transform duration-300 ease-in-out"
           aria-label="Mobile Navigation"
-          role="navigation"
         >
           <ul>
             <li>
@@ -159,6 +149,8 @@ const Navbar = () => {
         </nav>
       )}
     </header>
+
+
   );
 };
 
