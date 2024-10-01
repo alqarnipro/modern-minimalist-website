@@ -16,7 +16,7 @@ const AgencyBanner: React.FC = () => {
       </div>
 
       <div
-        className="bg-primary text-white lg:w-1/2 h-full flex items-center justify-start md:w-full"
+        className=" text-white lg:w-1/2 h-full flex items-center justify-start md:w-full"
         style={{
           backgroundImage: 'url("/assets/Background.png")',
           backgroundSize: "cover",
