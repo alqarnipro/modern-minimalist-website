@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react";
 import Mainbtn from "../components/mainBtn";
 import Accordion from "./Accordion";
-
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 const faqItems = [
   {
     question: "How does SEO differ from PPC?",
@@ -28,17 +30,35 @@ Events and Venues: Organizations hosting events or managing venues that cater to
 ];
 
 const FAQ = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+      }, 5000);
+    };
+    fetchData();
+  }, []);
+
   return (
-    <section className="min-h-screen bg-gray-100 flex items-center">
-      <article className="flex flex-col md:flex-row justify-between align-middle mx-auto p-4 w-full container">
-        <header className="mb-4 md:mb-0">
-          <h1 className="uppercase font-bold text-8xl">FAQ</h1>
-          <p className="uppercase text-8xl">Section</p>
-          <Mainbtn text="Explore More" link="/" />
-        </header>
-        <Accordion items={faqItems} />
-      </article>
-    </section>
+    <>
+      {loading ? (
+        <Skeleton count={5} />
+      ) : (
+        <div className="min-h-screen bg-gray-100 flex items-center">
+          <article className="flex flex-col md:flex-row justify-between align-middle mx-auto p-4 w-full container">
+            <header className="mb-4 md:mb-0">
+              <h1 className="uppercase font-bold text-8xl">FAQ</h1>
+              <p className="uppercase text-8xl">Section</p>
+              <Mainbtn text="Explore More" link="/" />
+            </header>
+            <Accordion items={faqItems} />
+          </article>
+        </div>
+      )}
+    </>
   );
 };
 

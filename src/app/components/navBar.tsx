@@ -59,14 +59,17 @@ const Navbar = () => {
         <nav className="hidden md:flex space-x-6" aria-label="Main Navigation">
           <ul className="flex space-x-6">
             <li>
-              <Link href="/" className="text-gray-700 hover:text-secondary">
+              <Link
+                href="/"
+                className="text-gray-700 hover:text-secondary transition duration-300"
+              >
                 Home
               </Link>
             </li>
             <li>
               <Link
                 href="/about"
-                className="text-gray-700 hover:text-secondary"
+                className="text-gray-700 hover:text-secondary transition duration-300"
               >
                 About
               </Link>
@@ -74,7 +77,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/services"
-                className="text-gray-700 hover:text-secondary"
+                className="text-gray-700 hover:text-secondary transition duration-300"
               >
                 Services
               </Link>
@@ -126,7 +129,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className="block py-2 px-4 text-gray-700 hover:bg-gray-100"
+                className="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition duration-300"
                 onClick={toggleMenu}
               >
                 Home
@@ -135,7 +138,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/about"
-                className="block py-2 px-4 text-gray-700 hover:bg-gray-100"
+                className="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition duration-300"
                 onClick={toggleMenu}
               >
                 About
@@ -144,7 +147,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/services"
-                className="block py-2 px-4 text-gray-700 hover:bg-gray-100"
+                className="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition duration-300"
                 onClick={toggleMenu}
               >
                 Services
