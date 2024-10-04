@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Mainbtn from "../components/mainBtn";
 import Accordion from "./Accordion";
+import React from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 const faqItems = [
@@ -28,6 +29,7 @@ Events and Venues: Organizations hosting events or managing venues that cater to
       "Common mistakes include keyword stuffing, neglecting mobile optimization, ignoring technical SEO, using duplicate content, not optimizing for local search, and failing to monitor and analyze SEO performance.",
   },
 ];
+
 
 const FAQ = () => {
   const [loading, setLoading] = useState(true);

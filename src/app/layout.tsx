@@ -4,6 +4,7 @@ import Navbar from "./components/navBar";
 import Footer from "./components/footer";
 import Head from "next/head";
 import LoadingBar from "./components/LoadingBar";
+import { Metadata } from "next";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -16,8 +17,11 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata = {
-  title: "Digital Marketing Agency - Welcome to MARKETEER",
+export const metadata: Metadata = {
+  title: {
+    default: "Digital Marketing Agency - Welcome to MARKETEER",
+    template: "%s  | MARKETEER",
+  },
   description:
     "Mary's simple recipe for maple bacon donuts makes a sticky, sweet treat with just a hint of salt that you'll keep coming back for.",
 };
@@ -30,10 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <title>{metadata.title}</title>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="description" content={metadata.description} />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
