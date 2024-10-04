@@ -30,7 +30,6 @@ Events and Venues: Organizations hosting events or managing venues that cater to
   },
 ];
 
-
 const FAQ = () => {
   const [loading, setLoading] = useState(true);
 

@@ -7,8 +7,8 @@ const WhoWeAreSection = dynamic(() => import("./whoWeAre"));
 const TestimonialSection = dynamic(() => import("./testmonialSection"));
 const PricingCards = dynamic(() => import("../components/PricingCard"));
 export const metadata: Metadata = {
-  title: 'about'
-}
+  title: "about",
+};
 export default function Page() {
   return (
     <>

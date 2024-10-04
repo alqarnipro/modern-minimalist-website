@@ -6,8 +6,8 @@ import StartJourny from "./startJourny";
 import ServiceCards from "./servicesCards";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title:'service'
-}
+  title: "service",
+};
 export default function Page() {
   return (
     <>
