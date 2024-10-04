@@ -4,7 +4,7 @@ import Mainbtn from "../components/mainBtn";
 
 const AgencyBanner: React.FC = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-center bg-gray-100 h-screen my-14">
+    <section className="flex flex-col lg:flex-row items-center bg-primary h-screen my-14">
       <div className="w-full lg:w-1/2 h-full hidden lg:block">
         <Image
           src="/assets/Women Collaborating at Work 1.png"

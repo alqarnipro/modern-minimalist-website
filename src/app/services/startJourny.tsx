@@ -12,7 +12,7 @@ const StartJourny: React.FC = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="text-center bg-opacity-70 bg-black p-5 rounded-lg">
+        <div className="text-center bg-opacity-70 p-5 rounded-lg">
           <h2 className="text-lg md:text-2xl font-bold mb-2">
             START YOUR EXPERIENCE
           </h2>
